@@ -1,0 +1,29 @@
+BEGIN
+    total = 0.0
+    count = 0
+    maximum = -∞
+    minimum = ∞
+
+    WHILE count < 5
+        READ value
+        total = total + value
+        count = count + 1
+
+        IF value > maximum THEN
+            maximum = value
+        END IF
+
+        IF value < minimum THEN
+            minimum = value
+        END IF
+    END WHILE
+
+    average = total / 5
+    interest = total * 0.2
+
+    PRINT "Total:", total
+    PRINT "Average:", average
+    PRINT "Maximum:", maximum
+    PRINT "Minimum:", minimum
+    PRINT "Interest on total at 20%:", interest
+END
